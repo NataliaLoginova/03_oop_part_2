@@ -12,5 +12,4 @@ export class Pages {
     getPageById(number: number): Page {
         return this.pages[number];
     }
-
 }
