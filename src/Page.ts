@@ -9,7 +9,7 @@ export class Page {
         this.pageMaterial = pageMaterial;
     }
 
-    toString() {
+    toString(): string {
         return `here is page ${this.pageType} #${this.pageNumber} and it\'s material is ${this.pageMaterial}`;
     }
 

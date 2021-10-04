@@ -1,5 +1,5 @@
 import { Item } from './Item';
-import {Pages} from "./Pages";
+import { Pages } from "./Pages";
 
 export class Comics extends Item {
     protected pages: Pages;
@@ -39,7 +39,7 @@ export class Comics extends Item {
         return this.artist;
     }
 
-    toString() {
+    toString(): string {
         return `Comics: ${this.getTitle()} by ${this.getAuthor()}, the artist is ${this.getArtist()}, number of pages: ${this.pages.length}`
     }
 

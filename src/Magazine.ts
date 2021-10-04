@@ -19,7 +19,7 @@ export class Magazine extends Item {
         return this.title;
     }
 
-    toString() {
+    toString(): string {
         return `Magazine: ${this.getTitle()} with number of pages: ${this.pages.length}`
     }
 

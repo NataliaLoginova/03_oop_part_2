@@ -1,4 +1,4 @@
-import {Page} from "./Page";
+import { Page } from "./Page";
 
 export class Pages {
     pages: Page[];
@@ -9,7 +9,7 @@ export class Pages {
         this.length = pages.length;
     }
 
-    getPageById(number: number) {
+    getPageById(number: number): Page {
         return this.pages[number];
     }
 
