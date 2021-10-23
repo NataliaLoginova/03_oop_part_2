@@ -6,14 +6,14 @@ export const PagesIterableMixin = (superclass: any) => class extends superclass 
             next: () => {
                 if (index < this.pages.length) {
                     let page = this.pages.getPageById(index);
-                    let descriptionOfPage = page.toString();
                     index++;
                     return {
-                        value: Object.assign(page, {
+                        value: {
                             toString: () => {
-                                return `${this.toString()}, ${descriptionOfPage}`
+                                return `${this.toString()}, ${page.toString()}`
                             }
-                        }), done: false
+                        },
+                        done: false
                     };
                 } else {
                     return {done: true};
